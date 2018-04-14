@@ -1,0 +1,114 @@
+Fritar un huevo
+Datos 
+	Estoy sentado en el comedor viendo la televisión y me entran ganas de fritarme un huevo
+Seudocódigo
+Análisis
+Entrada: Ganas de fritar un huevo 
+Proceso: Fritar el huevo y pasos para llegar a eso
+Salida: Satisfacer más ganas de ir al bano 
+Inicio
+-Cadena: huevos, mantequilla, cacerola, gas, plato, cocina, sal, comer, cuchara, voy
+-Entero: espere 
+-Escriba: “mirar si la cocina está ocupada”
+-Lea: cocina
+-Mientras que (cocina = = ocupada)
+-- espere?espere 5 minutos
+--Fin mientras que
+-lea: gas
+-si (gas = = no hay)
+--Escriba: “no puedo hacer huevo frito”
+-Sino
+-- lea: huevos
+--si (huevos = = no hay)
+---Escriba: “no puedo hacer huevo frito”
+--Sino
+---Si (cacerola = = limpio)
+----Si (plato = = limpio)
+-----Si (cuchara = = limpio)
+------cocina<== prendo una hornilla 
+------cacerola<== pongo la cacerola en la hornilla 
+------mantequilla<== le echo mantequilla en las cacerola 
+------huevo<== echo el huevo en la cacerola 
+------espere<== espero 10 minutos a que se cocine el huevo
+------plato<==  pongo el huevo en el plato
+------sal<== le echo sal al huevo
+------cuchara<==  cojo una cuchara y el plato con el huevo
+------voy<==  me voy a sentar en el comedor 
+------comer<== me como el huevo 
+-----Sino
+------cuchara<==  lavo la cuchara
+------cocina<== prendo una hornilla 
+------cacerola<==  pongo la cacerola en la hornilla 
+------mantequilla<== le echo mantequilla en las cacerola 
+------huevo<== echo el huevo en la cacerola 
+------espere<== espero 10 minutos a que se cocine el huevo
+------plato<==  pongo el huevo en el plato
+------sal<== le echo sal al huevo
+------cuchara<==  cojo una cuchara y el plato con el huevo
+------voy<==  me voy a sentar en el comedor 
+------comer<== me como el huevo 
+----Sino
+-----plato<== lavo el plato
+-----Si (cuchara = = limpio)
+------cocina<== prendo una hornilla 
+------cacerola<==  pongo la cacerola en la hornilla 
+------mantequilla<== le echo mantequilla en las cacerola 
+------huevo<== echo el huevo en la cacerola 
+------espere<== espero 10 minutos a que se cocine el huevo
+------plato<==  pongo el huevo en el plato
+------sal<== le echo sal al huevo
+------cuchara<== cojo una cuchara y el plato con el huevo
+------voy<== me voy a sentar en el comedor 
+------comer<== me como el huevo 
+-----Sino
+------cuchara<== lavo la cuchara
+------cocina<== prendo una hornilla 
+------cacerola<== pongo la cacerola en la hornilla 
+------mantequilla<== le echo mantequilla en las cacerola 
+------huevo<== echo el huevo en la cacerola 
+------espere<== espero 10 minutos a que se cocine el huevo
+------plato<== pongo el huevo en el plato
+------sal<== le echo sal al huevo
+------cuchara<== cojo una cuchara y el plato con el huevo
+------voy<== me voy a sentar en el comedor 
+------comer<== me como el huevo 
+---Sino
+----cacerola<== lavo cacerola
+----Si (plato = = limpio)
+-----Si (cuchara = = limpio)
+------cocina<== prendo una hornilla 
+------cacerola<== pongo la cacerola en la hornilla 
+------mantequilla<== le echo mantequilla en las cacerola 
+------huevo<== echo el huevo en la cacerola 
+------espere<== espero 10 minutos a que se cocine el huevo
+------plato<== pongo el huevo en el plato
+------sal<== le echo sal al huevo
+------cuchara<==  cojo una cuchara y el plato con el huevo
+------voy<== me voy a sentar en el comedor 
+------comer<== me como el huevo 
+----Sino
+-----plato?lavo el plato
+-----Si (cuchara = = limpio)
+------cocina<== prendo una hornilla 
+------cacerola<== pongo la cacerola en la hornilla 
+------mantequillav<== le echo mantequilla en las cacerola 
+------huevo<== echo el huevo en la cacerola 
+------espere<== espero 10 minutos a que se cocine el huevo
+------plato<== pongo el huevo en el plato
+------sal<== le echo sal al huevo
+------cuchara<== cojo una cuchara y el plato con el huevo
+------voy<== me voy a sentar en el comedor 
+------comer<== me como el huevo 
+-----Sino
+------cuchara<== lavo la cuchara
+------cocina<== prendo una hornilla 
+------cacerola<== pongo la cacerola en la hornilla 
+------mantequilla<== le echo mantequilla en las cacerola 
+------huevo<== echo el huevo en la cacerola 
+------espere<== espero 10 minutos a que se cocine el huevo
+------plato<== pongo el huevo en el plato
+------sal<== le echo sal al huevo
+------cuchara<== cojo una cuchara y el plato con el huevo
+------voy<== me voy a sentar en el comedor 
+------comer<== me como el huevo 
+Fin

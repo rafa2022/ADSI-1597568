@@ -1,0 +1,70 @@
+Ir al baño
+Datos
+	Son las cinco de la mañana y me dan gas de ir al baño
+Seudocódigo
+Análisis:
+Entrada: Ganas de ir al baño. 
+Proceso: Ir al baño y orinar. 
+Salida: Satisfacer las ganas de ir al baño. 
+Inicio 
+-Cadena:  puerta1, puerta2, ocupado, avanza, PCerrada, tapa, relajo
+-Lógico: inodoro, pare 
+-Escriba:” Mira si la puerta está abierta”
+-Lea: puerta1 
+-si (puerta1= = abierta)
+--Repetir
+---avanza<==  avanza hasta encontrar otra puerta
+--Hasta (pare = = verdadero)
+--Escriba:” Mira si la puerta está abierta”
+--Lea: puerta2
+-- si (puerta2= = abierta)
+---Repetir
+----avanza<==  avanza hasta encontrar el inodoro
+---Hasta (inodoro= = verdadero)
+----Escriba:” Mira si la tapa está arriba”
+----Lea: tapa
+----si (tapa = = arriba)
+-----relajo<==  orino
+----Sino
+-----tapa<==  levanto la tapa
+-----relajo<==  orino
+--Sino
+---PCerrada<==  abrir la puerta 
+---Repetir
+----avanza<==  avanza hasta encontrar el inodoro
+---Hasta (inodoro= = verdadero)
+----Escriba:” Mira si la tapa está arriba”
+----Lea: tapa
+----si (tapa = = arriba)
+-----relajo<==  orino
+----Sino
+-----tapa<==  levanto la tapa
+-----relajo<==  orino
+-Sino 
+--PCerrada<==  abrir la puerta
+--Escriba:” Mira si la puerta está abierta”
+--Lea: puerta2
+-- si (puerta2= = abierta)
+---Repetir
+----avanza<==  avanza hasta encontrar el inodoro
+---Hasta (inodoro= = verdadero)
+----Escriba:” Mira si la tapa está arriba”
+----Lea: tapa
+----si (tapa = = arriba)
+-----relajo? orino
+----Sino
+-----tapa<==  levanto la tapa
+-----relajo<==  orino
+--Sino
+---PCerrada<==  abrir la puerta 
+---Repetir
+----avanza<==  avanza hasta encontrar el inodoro
+---Hasta (inodoro= = verdadero)
+----Escriba:” Mira si la tapa está arriba”
+----Lea: tapa
+----si (tapa = = arriba)
+-----relajo<==  orino
+----Sino
+-----tapa<== levanto la tapa
+-----relajo<== orino
+Fin

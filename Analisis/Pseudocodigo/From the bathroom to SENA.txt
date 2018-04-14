@@ -1,0 +1,67 @@
+From the bathroom to SENA
+Data
+	steps since I take a bath until I get to the SENA
+Pseudocode 
+Analysis
+Entry: the things I need to bathe and go to the SENA
+Process: bathe me and go to SENA
+Exit: get to SENA
+Start
+-String: shampoo, soap, shaving machine, meAfeito, cremadedientes, toothbrush, water, deodorant, towel, clothes, lunch, transpote, meducho, sena
+-Read: water
+-Read: shampoo
+-Read: soap
+-Read: shaving machine
+-Read: meAfeito
+-Read: cremadedientes
+-Read: brush it
+-Read: deodorant
+-Read: towel
+-Read: money
+-Read: transport
+-if (water = = yes)
+--If (meAfeito = = yes)
+--- if (shaving machine = = yes)
+---- meafeito<==me shaved
+---- if (towel = = yes)
+----- if (shampoo = = yes)
+------ if (soap = = yes)
+------- Meducho: I get in the shower and I bathe
+------- if (deodorant = = yes)
+------- deodorant<==I apply it
+------- clothes<==I wear it
+------- lunch<==eat
+------- transport <== I look for transportation to take me
+------- sena<==arrived at the sena
+------- else
+-------- deodorant<==I'm going for what's missing
+------ else
+------- soapy I'm going for what's missing
+----- else
+------ shampoo<== I'm going for what's missing
+---- else
+----- towel<== I go for what is missing
+--- else
+---- Write: "I do not shave"
+--else
+---- if (towel = = yes)
+----- if (shampoo = = yes)
+------ if (soap = = yes)
+------- Meducho: I get in the shower and I bathe
+------- if (deodorant = = yes)
+------- deodorant<==I apply it
+------- clothes<== I wear it
+------- lunch<== eat
+------- transport <== I look for transportation to take me
+------- sena<== arrived at the sena
+------- else
+-------- deodorant<== I'm going for what's missing
+------ else
+------- soapy I'm going for what's missing
+----- else
+------ shampoo<== I'm going for what's missing
+---- else
+----- towel<== I go for what is missing
+-else
+- write: "I'm not going to sena"
+End 

@@ -1,0 +1,38 @@
+Ice cream
+Data 
+I'm standing at the door that leads to the street of my house and I felt like eating ice cream.
+Pseudocode 
+Analysis
+Entry: desire to eat ice cream
+Process: buy eat ice cream
+Exit: satisfy the desire to eat ice cream
+Start
+-string: ice cream, ice cream shop, open, like, change
+- doble: money, Price
+-Write: "I have money"
+-read: money
+-if (money> = 1500)
+- Write: "Where is the ice cream shop?"
+--heladerie<== 10 meters north of my location
+- Write: "The ice cream shop is open"
+- Read: open
+--if (open = = open)
+--- heladeria<== I advance 10 meters north of my location
+---Repeat
+---- Write: "choose an ice cream"
+---- Read: ice cream
+----I appreciate it
+--- Up (price <= money)
+--- Write: "I select the ice cream"
+--- if (price <money)
+---- change<==I hope the change
+---- like<== like ice cream
+--- else
+---- like<== like ice cream
+-- else
+--- Write: "I can not eat ice cream"
+-else
+-Write: "I can not eat ice cream"
+End
+
+

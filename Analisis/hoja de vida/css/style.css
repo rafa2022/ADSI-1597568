@@ -1,0 +1,116 @@
+body {
+    background-color: rgba(10, 26, 13, 0.50);
+}
+.res{
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100vh;
+}
+.right{
+    flex-grow: 5; 
+}
+.left{
+    flex-grow: 1; 
+    border-radius: 5%;
+}
+.personData{
+    border-radius: 5%;
+}
+img{
+    border-radius: 5%;
+    cursor: pointer;
+}
+b{
+    font-size: 1.2rem;
+}
+a{
+    color: white;
+}
+@font-face {
+    font-family: "Do Hyeon";
+    src: url("../font/DoHyeon/DoHyeon-Regular.ttf");
+}
+h1{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 3rem;
+}
+@font-face{
+    font-family: 'Gugi', cursive;
+    src: url("../font/Gugi/Gugi-Regular.ttf");
+}
+.counter{
+    font-family: 'Gugi', cursive;
+}
+.visit{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.5rem;
+    color: brown;
+}
+@media (max-width: 767.98px){
+    .res{
+        flex-direction: column;
+    }
+    .right{
+        background-color: #5a6268;
+    }
+    .pohoto{
+        justify-content: center;
+        border-radius: 75%;
+    }
+    .personalReference{
+        color: #533f03;
+    }
+    .workReference{
+        color: #721c24;
+    }
+    .professionalProfile{
+        color: burlywood;
+    }
+    .counter{
+        color: firebrick;
+    }
+}
+@media (max-width: 360px) {
+    body {
+        background-color: #5a6268;
+    }
+    .pohoto{
+        justify-content: center;
+        border-radius: 75%;
+        width: 145px;
+    }
+    .right{
+        background-color: #ffe8a1;
+    }
+    .personalReference{
+        color: #5a6268;
+    }
+    .workReference{
+        color: #5a6268;
+    }
+    .professionalProfile{
+        color: #5a6268;
+    }
+    @font-face {
+        font-family: "Do Hyeon";
+        src: url("../font/DoHyeon/DoHyeon-Regular.ttf");
+    }
+    .counter{
+        font-family: 'Do Hyeon', sans-serif;
+        color: #0b2e13;
+    }
+    @font-face{
+        font-family: 'Gugi', cursive;
+        src: url("../font/Gugi/Gugi-Regular.ttf");
+    }
+    h1{
+        font-family: 'Gugi', cursive;
+        font-size: 3rem;
+        color: orangered;
+    }
+    a{
+        color: blue;
+    }
+}
