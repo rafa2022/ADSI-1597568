@@ -1,0 +1,21 @@
+.general{
+    text-align:center;
+}
+body {
+    margin-left:10%;
+    margin-right:10%;
+    font-size: 16px;
+    font-family:  Verdana, sans-serif;
+    background-color:rgba(94, 98, 95, 0.49);
+}
+input {
+    border-bottom-color: #a0b2e8;
+    margin: 5%;
+}
+
+button{
+    border-radius: 0px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    background: rgb(198, 201, 204);
+}

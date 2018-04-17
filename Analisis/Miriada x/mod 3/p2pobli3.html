@@ -1,0 +1,45 @@
+<!DOCTYPE html><html>
+<head>
+  <title>Rafael Mauricio Giraldo</title>
+  <meta charset="UTF-8">
+  <style type="text/css">
+  	body{
+  		background-color: green;
+  	}
+  </style>
+</head>
+<body>
+  <h1 id="h1"></h1>
+  <h1>Rafael Mauricio Giraldo</h1>
+  <h2 id="h2">La fecha y la hora son:</h2>
+  <div id="fecha"></div><br>
+  <div id="bloque">
+    a) Contenido de innerHTML de elemento identificado por id="h2": <div id="cont1"></div>
+    b) Contenido de outerHTML de elemento identificado por id="h1": <div id="cont2"></div> 
+    c) Contenido de de la propiedad global: location.href: <div id="cont3"></div>
+    d) Contenido de de la propiedad global: location: <div id="cont4"></div>
+    e) Contenido de de las propiedades globales: screen.width y screen.heigth: <div id="cont5"></div> 
+  </div>
+
+ <script type="text/javascript">
+  var fecha = new Date();
+  var msj;
+  var cont;
+
+  if      (fecha.getHours() < 7)  { msj = "Buenas noches";}
+  else if (fecha.getHours() < 12) { msj = "Buenos dias";}
+  else if (fecha.getHours() < 21) { msj = "Buenas tardes";}
+  else                                          { msj = "Buenas noches";}
+ 
+  cont="Hola caracola";
+  document.getElementById("h1").innerHTML    = msj;
+  document.getElementById("fecha").innerHTML = fecha;
+
+  document.getElementById("cont1").innerHTML = h2.innerHTML;
+  document.getElementById("cont2").innerHTML = h1.outerHTML;
+  document.getElementById("cont3").innerHTML = location.href;
+  document.getElementById("cont4").innerHTML = location;
+  document.getElementById("cont5").innerHTML = screen.width+" + "+screen.heigth;
+</script>
+</body>
+</html>

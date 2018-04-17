@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculadora</title>
+<meta charset="utf-8">
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="images/tool.png">
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+  var num, msj, acc = 0, op = "";
+
+  function mas()   { acc = num.value;  op = "+"; num.value = ""; }
+  function menos() { acc = num.value;  op = "-"; num.value = "";}
+  function multiplicar() { acc = num.value; op = "*"; num.value = ""; }
+  function dividir() { acc = num.value; op = "/"; num.value = "";}
+  function cuadrado(){ num.value = Math.pow(num.value,2);}
+  function inverso(){ num.value= 1 / num.value;}
+  function raiz(){ num.value = Math.sqrt(num.value);}
+  function potencia() { acc = num.value; op = "^"; num.value = "";}
+
+  function entero(){
+  	if(num.value > 0) {num.value = Math.floor(num.value)}
+  	else if(num.value < 0){num.value = Math.ceil(num.value)}
+  }
+
+  function numeros(nume) {
+  	// body...
+  	num.value += nume;
+  }
+
+ function punto() {
+ 	// body...
+ 	num.value += ".";
+ }
+
+ function neg(){
+ 	num.value = "-";
+ }
+
+  function calcular() {
+    if (op === "+") {num.value = (+acc + +num.value)}
+    if (op === "-") {num.value = (+acc - +num.value)}
+    if (op === "*") {num.value = (+acc * +num.value)}
+    if (op === "/") {num.value = (+acc / +num.value)}
+    if (op === "^") {num.value = Math.pow(+acc,+num.value)}
+  }
+	
+
+  function inic ()   {num = document.getElementById("num");}
+  function vaciar () {num.value = "";}  
+</script>
+</head>
+
+<body onLoad="inic()">
+	<div><h1>Buenos días, bienvenido a la calculadora de  Rafael Mauricio</h1></div>
+<div>
+
+
+<article>
+
+<section>
+<h1 id="h1"></h1>
+
+<script type="text/javascript">
+var fecha = new Date();
+
+   if      (fecha.getHours() < 7)  { msj = "Buenas noches";}
+  else if (fecha.getHours() < 12) { msj = "Buenos días";}
+  else if (fecha.getHours() < 21) { msj = "Buenas tardes";}
+  else                                          { msj = "Buenas noches";}
+
+
+</script>
+</section>
+	<div id="calculadora" >
+	
+		
+  		<input type="text" size="12" id="num" onClick="vaciar()"><p>
+  		
+  		
+  		<button onClick="cuadrado()"> x<sup>2</sup> </button>
+  		<button onClick="inverso()">1/x</button>
+  		<button onClick="raiz()">√</button>
+  		
+  		<button onClick="potencia()">&#94</button>
+  		</p>	
+  		<p>
+  		<button onClick="numeros(1)">1</button>
+  		<button onClick="numeros(2)">2</button>
+  		<button onClick="numeros(3)">3</button>
+  		<button onClick="mas()">+</button>
+  		</p>
+  		<p>
+  		<button onClick="numeros(4)">4</button>
+  		<button onClick="numeros(5)">5</button>
+  		<button onClick="numeros(6)">6</button>
+  		<button onClick="menos()">-</button>
+  		</p>
+  		<p>
+  		<button onClick="numeros(7)">7</button>
+  		<button onClick="numeros(8)">8</button>
+  		<button onClick="numeros(9)">9</button>
+  		<button onClick="multiplicar()">&#215</button>
+  		</p>
+  		<p>
+  		<button onClick="numeros(0)">0</button>
+  		<button onClick="punto()">.</button>
+  		<button onClick="dividir()">&#247</button>
+  		<button onClick="neg()">&#177</button>
+  		</p>
+
+  		<p>
+  		<button id="igual" onClick="calcular()">&#61</button>
+		<button id="entero" onClick="entero()">Entero</button>
+  		
+  		</p>
+	</div>
+</article>
+<footer>Ejercicio p2p Obligatorio - MiriadaX</footer>
+</div>
+
+</body>
+</html>

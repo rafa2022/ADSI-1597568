@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html> <head>
+        <meta charset="utf-8"> <title>PUZZLE</title>
+        <script src="jquery-2.1.4.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="jquery.ui.touch-punch.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            * { user-select: none;           /* user-select, hace el objeto no seleccionable */
+                -webkit-touch-callout: none; /* anula el efecto visual del touch prolongado sobre el objeto */
+                -webkit-tap-highlight-color: rgba(0,0,0,0); /* anula feedback de color al hacer tap en link */
+                -webkit-tap-highlight-color: transparent;   /* similar anterior en algunos android */
+
+                margin:0;
+                padding:0;
+            }
+
+            #sortable { 
+                list-style-type: none;
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+            #sortable li { 
+                float: left; 
+                width: 33.3%; 
+            }
+
+            #sortable li img {
+                vertical-align:bottom;
+                width: 100%; 
+                height: auto;
+            }
+            /* En apaisado (landscape) anchura = máxima altura */
+            @media (orientation:landscape){
+                #sortable { width:100vh; } /* 100vh: 100% del alto de ventana visualizada */
+            }
+            /* En vertical (portrait) se adapta al máximo ancho */
+            @media (orientation:portrait){
+                #sortable { width:100%; }
+            }
+        </style>
+
+        <script>
+$(function () {
+    $("#sortable").sortable();
+    $("#sortable").disableSelection();
+});
+        </script>
+
+    </head> <body>
+        <div class="container">
+            <!--nabvar-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+                <a class="navbar-brand text-light" href="../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="10-puzzle_touch_punch.html" >puzzle<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="../calculadora.html">Calculadora</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.44);" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-light" href="#">Action</a>
+                                <a class="dropdown-item text-light" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-light" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled text-light" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <ul id="sortable">
+            <li><img  src="rafael_8.jpg" /></li>
+            <li><img  src="rafael_4.jpg" /></li>
+            <li><img  src="rafael_6.jpg" /></li>
+            <li><img  src="rafael_2.jpg" /></li>
+            <li><img  src="rafael_9.jpg" /></li>
+            <li><img  src="rafael_3.jpg" /></li>
+            <li><img  src="rafael_7.jpg" /></li>
+            <li><img  src="rafael_1.jpg" /></li>
+            <li><img  src="rafael_5.jpg" /></li>
+        </ul>
+
+    </body></html>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculadora</title>
+        <meta charset="utf-8">
+        <!--<link rel="stylesheet" type="text/css" href="estilo.css">-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="calcus.js" type="text/javascript"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <!--nabvar-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+                <a class="navbar-brand text-light" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="puzzle/10-puzzle_touch_punch.html" >puzzle<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="calculadora.html">Calculadora</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, 0.44);" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-light" href="#">Action</a>
+                                <a class="dropdown-item text-light" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-light" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled text-light" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--claculadora-->
+            <div class="card" style="width: 18rem;">
+                <div class="general">
+                    <h3>Esta es la calculadora de Rafael Mauricio</h3>
+                    <p></p>
+                    <section>
+                        <label for="num">Numeros:</label>
+                        <input type="text" size="18" id="num">
+                        <button id="calcular">=</button>
+                    </section>
+                    <button id="reiniciar">Reiniciar</button>
+                    <p></p>
+                    <div class="card-body">
+                        <fieldset>
+                            <legend>
+                                <h3>Operaciones binarias</h3>
+                            </legend>
+                            <button id="csv_suma">suma</button>
+                            <button id="menos">-</button>
+                            <button id="dividir">/</button>
+                            <button id="por">*</button>
+                            <button id="mas">+</button>
+                            <button id="csv_mul">producto</button>
+                            <button id="elevado">
+                                "x"
+                                <sup>y</sup>
+                            </button>
+                        </fieldset>
+                    </div>
+                    <div class="card-body">
+                        <fieldset>
+                            <legend>
+                                <h3>Operadore unitarios</h3>
+                            </legend>
+                            <button id="cuadrado">
+                                "x"
+                                <sup>2</sup>
+                            </button>
+                            <button id="inverso">1/x</button>
+                            <button id="raiz">√x</button>
+                            <button id="entero">int</button>
+                            <button id="factorial">!n</button>
+                            <button id="potencia">
+                                "2"
+                                <sup>2</sup>
+                            </button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
