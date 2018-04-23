@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Do Hyeon";
+    src: url("../font/DoHyeon/DoHyeon-Regular.ttf");
+}
+.optionn{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1rem;
+}
+@font-face{
+    font-family: 'Gugi', cursive;
+    src: url("../font/Gugi/Gugi-Regular.ttf");
+}
+.menssage{
+    font-family: 'Gugi', cursive;
+}
+body{
+    
+}
