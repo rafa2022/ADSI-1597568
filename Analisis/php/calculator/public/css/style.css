@@ -1,3 +1,19 @@
+.hello{
+    background-color: rgba(17, 166, 161, 0.4);
+    
+}
+input{
+    background-color: transparent;
+    border: 0px;
+    border-bottom: #fff 0.1rem solid;
+}
+.inp1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 @font-face {
     font-family: "Do Hyeon";
     src: url("../font/DoHyeon/DoHyeon-Regular.ttf");
@@ -13,6 +29,35 @@
 .menssage{
     font-family: 'Gugi', cursive;
 }
-body{
-    
+.formCalc{
+    display: flex;   
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 10%;
+    flex-direction: column;
+    align-content: center; 
+    height: 100vh; 
 }
+@media (max-width: 767.98px){
+    .formCalc{
+        display: flex;   
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top: 5%; 
+    }
+    .hello{
+        background-color: rgba(10, 26, 13, 0.50);
+    }
+}
+@media (max-width: 360px){
+    .formCalc{
+        display: flex;   
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-top: 5%; 
+    }
+    .hello{
+        background-color: #5a6268;
+    }
+}
+

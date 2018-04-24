@@ -5,11 +5,15 @@
         <title>Calculator</title>
         <link rel="shortcut icon" href="img/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
-        <form action="calc.php" method="get">
-            <input type="number" name="n1">
-            <select class="optionn" name="operation">
+    <body class="hello"> 
+
+        <form class="formCalc" action="calc.php" method="get">
+
+            <input class="inp1" type="number" name="n1">
+            <select class="btn btn-outline-primary" name="operation">
                 <option value="">Select an operation</option>
                 <option value="1">Sum</option>
                 <option value="2">Subtraction</option>
@@ -22,9 +26,13 @@
                 <option value="9">X^2</option>
                 <option value="10">X^Y</option>
             </select>
+            <input class="inp1" type="number" name="n2">
+            <button type="submit" class="btn btn-outline-success btnRadius" name="btnOperate">Operate</button>
             <br>
-            <input type="number" name="n2">
-            <button type="submit" name="btnOperate">Operate</button>
+            <h2>Instructions</h2>
+            <section>when you go to execute a single character operation you must enter the number in the first text box.</section>
         </form>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
     </body>
 </html>

@@ -72,7 +72,12 @@ class calculator1 {
     }
 
     public function division(): float {
-        return $this->number1 / $this->number2;
+        if ($this->number2 != 0){
+            return $this->number1 / $this->number2;    
+        } else {
+            throw new \Exception("The division by zero does not exist.", 1);      
+        }
+        
     }
 
     public function divisionModule(): float {
